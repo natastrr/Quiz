@@ -1,0 +1,128 @@
+@font-face {
+    src: url("/fonts/MuseoSansCyrl-500.ttf");
+    font-family: "Museo Sans Cyrl";
+}
+@font-face {
+    src: url("/fonts/MuseoSansCyrl-700.ttf");
+    font-family: "Museo Sans Cyrl Bold";
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Museo Sans Cyrl", sans-serif;
+    color: #333;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.button {
+    border-radius: 6px;
+    padding: 14px 35px;
+    background-color: #6933dc;
+    font-size: 17px;
+    line-height: 20px;
+    color: #fff;
+    border: 0;
+    cursor: pointer;
+    transition: .3s;
+    text-decoration: none;
+}
+
+a.button {
+    display: inline-block;
+}
+
+.button:hover {
+    background-color: #592bb9;
+}
+
+.button:disabled {
+    background-color: #dcdcf3;
+    cursor: not-allowed;
+}
+
+.button-transparent {
+    background-color: transparent;
+    border: 1px solid #6933dc;
+    color: #6933dc;
+}
+
+.button-transparent:hover {
+    background-color: #6933dc;
+    color: #fff;
+}
+
+.button-transparent:disabled {
+    background-color: transparent;
+    color: #dcdcf3;
+    border: 1px solid #dcdcf3;
+}
+
+a {
+    color: #6933dc;
+}
+
+.header {
+    padding: 42px 0 40px;
+    border-bottom: 1px solid #dcdcf3;
+}
+
+.header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.big-title {
+    font-family: "Museo Sans Cyrl Bold", sans-serif;
+    font-size: 54px;
+    line-height: 65px;
+}
+
+.big-title span {
+    color: #6933dc;
+}
+
+.common-title {
+    font-family: "Museo Sans Cyrl Bold", sans-serif;
+    font-size: 48px;
+    line-height: 58px;
+}
+.common-title span {
+    color: #6933dc;
+}
+
+.footer {
+    padding: 40px 0;
+    text-align: center;
+    font-size: 13px;
+    line-height: 16px;
+    color: #dcdcf3;
+}
+
+.profile {
+    display: flex;
+    align-items: center;
+}
+
+.profile-image {
+    margin-right: 5px;
+}
+
+.profile-user {
+    font-size: 18px;
+    line-height: 1;
+}
+
+.profile-logout {
+    font-size: 12px;
+    line-height: 1;
+}
